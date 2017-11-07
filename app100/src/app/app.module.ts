@@ -15,6 +15,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ContentComponent } from './content/content.component';
 import { TopbarComponent } from './topbar/topbar.component';
 import { TopbarDropmenuComponent } from './topbar-dropmenu/topbar-dropmenu.component';
+import { AlertsListComponent } from './alerts-list/alerts-list.component';
 
 const appRoutes:Routes = [
   {
@@ -61,7 +62,8 @@ const appRoutes:Routes = [
     NavbarComponent,
     ContentComponent,
     TopbarComponent,
-    TopbarDropmenuComponent],
+    TopbarDropmenuComponent,
+    AlertsListComponent],
   imports: [
     FormsModule,
     RouterModule.forRoot(appRoutes),
