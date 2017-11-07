@@ -1,0 +1,29 @@
+<div id="fullPage">
+	<div id="login1" role="tabpanel" class="admin-form theme-primary tab-pane mw800">
+		<div class="panel panel-primary heading-border">
+			<div class="panel-heading"><span class="panel-title"><i class="fa fa-sign-in"></i>Login</span></div>
+			<form id="form-login1" (submit)="loginUser($event)">
+				<div class="panel-body p25 pt10">
+					<div class="section">
+						<label for="username" class="field prepend-icon">
+							<input id="username" type="text" name="username" placeholder="Ingresar usuario" class="gui-input" [(ngModel)]='username'>
+							<label for="username" class="field-icon"><i class="fa fa-user"></i></label>
+						</label>
+					</div>
+					<div class="section">
+						<label for="password" class="field prepend-icon">
+							<input id="password" type="password" name="password" placeholder="Ingresar contraseña" class="gui-input" [(ngModel)]='password'>
+							<label for="password" class="field-icon"><i class="fa fa-lock"></i></label>
+						</label>
+					</div>
+					<div class="section" [hidden]="!showErrorMessage">
+						<span class="text-danger">Usuario o contraseña incorrecta</span>
+					</div>
+				</div>
+				<div class="panel-footer">
+					<button type="submit" class="button btn-primary">Ingresar</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
